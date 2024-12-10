@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C-Data Winter Agency</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> <!-- Link a file JS per la logica -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo" />
+            <h1>C-Data Winter Agency</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Kryefaqja</a></li>
+                <li><a href="destinations.html">Sygjerimet tona</a></li>
+                <li><a href="about.html">Rreth nesh</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Destinacionet më të mira dimërore.</h2>
+                <p>Cilat janë vendet më të bukura për t'u vizituar këtë dimër?</p>
+            </div>
+        </section>
+
+        <section class="destinations">
+            <h2>Udhëtimi juaj i ëndrrave është vetëm një hap larg!</h2>
+            <div class="destination-container">
+
+                <div class="destination-card">
+                    <img src="roma.jpg" alt="Romë" class="destination-image">
+                    <div class="destination-info">
+                        <h3>Roma</h3>
+                        <p>Vizitoni "Qytetin e përjetshëm" dhe do të mësoni më shumë rreth kulturës së vjetër romake dhe asaj mesjetare në çdo hap që do të hidhni.</p>
+                        <p id="price">€199</p>
+                        <p style="font-size: 12px; color:black">Data: 24.12.2024 - 27.12.2024</p>
+                        <p><b>PËRFSHIHEN: Fluturim + Hotel + Mëngjes</b></p>
+                        <button class="btn-book" onclick="openBookingForm('Romë')">Prenoto</button>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <img src="paris.jpg" alt="Paris" class="destination-image">
+                    <div class="destination-info">
+                        <h3>Paris</h3>
+                        <p>Kulla Eiffel, Harku i Triumfit, Pallati i Versajës, Champs Elysees, Museu i Louvre, lundrim në lumin "Sena" nuk duhet të mungojë në portofolin tuaj të kujtimeve.</p>
+                        <p id="price">€499</p>
+                        <p style="font-size: 12px; color:black">Data: 23.12.2024 - 26.12.2024</p>
+                        <p><b>PËRFSHIHEN: Fluturim + Hotel + Mëngjes</b></p>
+                        <button class="btn-book" onclick="openBookingForm('Paris')">Prenoto</button>
+                    </div>
+                </div>
+                
+                <div class="destination-card">
+                    <img src="colmar.jpg" alt="Colmar" class="destination-image">
+                    <div class="destination-info">
+                        <h3>Colmar</h3>
+                        <p>Qyteti nga ku është frymëzuar filmi për fëmijë "E bukura dhe Bisha" në dimër shndërrohet në një kartolinë me pamjet piktoreske që ai ofron.</p>
+                        <p id="price">€349</p>
+                        <p style="font-size: 12px; color:black">Data: 29.12.2024 - 02.01.2025</p>
+                        <p><b>PËRFSHIHEN: Fluturim + Hotel + Mëngjes</b></p>
+                        <button class="btn-book" onclick="openBookingForm('Colmar')">Prenoto</button>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <img src="viena.jpg" alt="Vienë" class="destination-image">
+                    <div class="destination-info">
+                        <h3>Vienë</h3>
+                        <p>Një mbrëmje operistike në Teatrin e Operas së Vjenës dhe eksploroni galeritë e artit në Kunsthistorisches Museum, Albertinaplatz, Stephansplatz etj.</p>
+                        <p id="price">€439</p>
+                        <p style="font-size: 12px; color:black">Data: 23.12.2024 - 26.12.2024</p>
+                        <p><b>PËRFSHIHEN: Fluturim + Hotel + Mëngjes</b></p>
+                        <button class="btn-book" onclick="openBookingForm('Vienë')">Prenoto</button>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <img src="budapest.jpg" alt="Budapest" class="destination-image">
+                    <div class="destination-info">
+                        <h3>Budapest</h3>
+                        <p>Lundrimi mbi Danub pranë Parlamentit hungarez të ndriçuar nga dritat e dimrit, vizita në Bastionin e Peshkatarit dhe shumë të tjera.</p>
+                        <p id="price">€399</p>
+                        <p style="font-size: 12px; color:black">Data: 30.12.2024 - 03.01.2025</p>
+                        <p><b>PËRFSHIHEN: Fluturim + Hotel + Mëngjes</b></p>
+                        <button class="btn-book" onclick="openBookingForm('Budapest')">Prenoto</button>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <img src="prage.jpg" alt="Pragë" class="destination-image">
+                    <div class="destination-info">
+                        <h3>Pragë</h3>
+                        <p>Një qytet të mbushur me magji, ku rrugët e vjetra janë të mbuluara me dëborë dhe dritat e Krishtlindjeve i japin një ndriçim të veçantë.</p>
+                        <p id="price">€149</p>
+                        <p style="font-size: 12px; color:black">Data: 06.01.2025 - 10.01.2025</p>
+                        <p><b>PËRFSHIHEN: Fluturim + Hotel + Mëngjes</b></p>
+                        <button class="btn-book" onclick="openBookingForm('Pragë')">Prenoto</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Adresa: Kompleksi Xhura, Rruga Xhanfize Keko, Tiranë 1000</p>
+        <p>Kontakt: 069 123 1234</p>
+        <p>&copy; 2024 C-Data Winter Agency - Të gjitha të drejtat e rezervuara.</p><br>
+        <p>Follow us:
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="facebook.jpg" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="instagram.jpg" alt="Instagram">
+        </a>
+    </p>
+    </footer>
+
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <h2>Prenoto udhëtimin tënd për në <span id="destinationName"></span></h2>
+            <form id="bookingForm">
+                <label for="firstName">Emri:</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <label for="lastName">Mbiemri:</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <label for="phone">Telefon:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="adults">Të rritur:</label>
+                <input type="number" id="adults" name="adults" required min="1">
+                <label for="children">Fëmijë nën 14 vjeç:</label>
+                <input type="number" id="children" name="children" required min="0">
+                <label for="rooms">Sa dhoma:</label>
+                <input type="number" id="rooms" name="rooms" required min="1">
+                <button type="button" onclick="confirmBooking()">Konfirmo</button>
+                <button type="button" onclick="closeBookingForm()">Anullo</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
